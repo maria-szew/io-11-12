@@ -49,7 +49,7 @@ jobs:
 
       - name: Build and analyze with SonarCloud
         env:
-          SONAR_TOKEN: ${{ 136f6d66ea4686a053639a3b7c448c1a7a5876f9 }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
             -Dsonar.projectKey=maria-szew_io-11-12 \
