@@ -53,7 +53,7 @@ jobs:
         run: |
           mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
             -Dsonar.projectKey=maria-szew_io-11-12 \
-            -Dsonar.organization=maria_szew \
+            -Dsonar.organization=maria-szew \
             -Dsonar.host.url=https://sonarcloud.io
 
       - name: Update dependency graph
